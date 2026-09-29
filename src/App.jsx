@@ -265,6 +265,21 @@ export default function App() {
               className="hero-bg-img"
             />
           </div>
+
+          {/* Quick Mobile Action Bar */}
+          <div className="hero-mobile-actions">
+            <button
+              className="btn-primary hero-mobile-btn"
+              onClick={() => scrollToSection('dat-lich')}
+            >
+              <Calendar size={16} />
+              <span>ĐẶT LỊCH NGAY</span>
+            </button>
+            <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
+              <Phone size={16} />
+              <span>0938 974 424</span>
+            </a>
+          </div>
         </section>
 
         {/* =========================================================================
