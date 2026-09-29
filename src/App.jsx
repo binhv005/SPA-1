@@ -261,36 +261,19 @@ export default function App() {
             <div className="hero-overlay"></div>
           </div>
 
-          {/* Hero Content Over Background Photo */}
-          <div className="hero-mobile-content">
-            <div className="hero-mobile-info">
-              <h1 className="hero-mobile-title">
-                Trị Liệu Dưỡng Sinh & Bảo Dưỡng Sức Khỏe
-              </h1>
-              <p className="hero-mobile-subtitle">
-                Không gian an yên • Phục hồi năng lượng cơ thể
-              </p>
-
-              <div className="hero-mobile-pills">
-                <span className="hero-pill">🌿 Thảo mộc tự nhiên</span>
-                <span className="hero-pill">💆 KTV chuyên nghiệp</span>
-                <span className="hero-pill">📍 Tân Bình, TP. HCM</span>
-              </div>
-
-              <div className="hero-mobile-actions">
-                <button
-                  className="btn-primary hero-mobile-btn"
-                  onClick={() => scrollToSection('dat-lich')}
-                >
-                  <Calendar size={16} />
-                  <span>ĐẶT LỊCH NGAY</span>
-                </button>
-                <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
-                  <PhoneCall size={16} />
-                  <span>0938 974 424</span>
-                </a>
-              </div>
-            </div>
+          {/* Clean Quick Action Bar on Mobile */}
+          <div className="hero-mobile-actions">
+            <button
+              className="btn-primary hero-mobile-btn"
+              onClick={() => scrollToSection('dat-lich')}
+            >
+              <Calendar size={16} />
+              <span>ĐẶT LỊCH NGAY</span>
+            </button>
+            <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
+              <PhoneCall size={16} />
+              <span>0938 974 424</span>
+            </a>
           </div>
         </section>
 
