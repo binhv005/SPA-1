@@ -251,6 +251,7 @@ export default function App() {
             SECTION 1 – HERO
             ========================================================================= */}
         <section id="hero" className="hero-section">
+          {/* Desktop Fullscreen Banner */}
           <div className="hero-bg-wrapper">
             <img
               src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
@@ -259,19 +260,44 @@ export default function App() {
             />
           </div>
 
-          {/* Quick Mobile Action Bar */}
-          <div className="hero-mobile-actions">
-            <button
-              className="btn-primary hero-mobile-btn"
-              onClick={() => scrollToSection('dat-lich')}
-            >
-              <Calendar size={16} />
-              <span>ĐẶT LỊCH NGAY</span>
-            </button>
-            <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
-              <PhoneCall size={16} />
-              <span>0938 974 424</span>
-            </a>
+          {/* Mobile Enhanced Full-Height Hero Experience */}
+          <div className="hero-mobile-content">
+            <div className="hero-mobile-banner-card">
+              <img
+                src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
+                alt="OMI SPA Bảo Dưỡng Sức Khỏe"
+                className="hero-mobile-banner-img"
+              />
+            </div>
+
+            <div className="hero-mobile-info">
+              <h1 className="hero-mobile-title">
+                Trị Liệu Dưỡng Sinh & Bảo Dưỡng Sức Khỏe
+              </h1>
+              <p className="hero-mobile-subtitle">
+                Không gian an yên • Phục hồi năng lượng cơ thể
+              </p>
+
+              <div className="hero-mobile-pills">
+                <span className="hero-pill">🌿 Thảo mộc tự nhiên</span>
+                <span className="hero-pill">💆 KTV chuyên nghiệp</span>
+                <span className="hero-pill">📍 Tân Bình, TP. HCM</span>
+              </div>
+
+              <div className="hero-mobile-actions">
+                <button
+                  className="btn-primary hero-mobile-btn"
+                  onClick={() => scrollToSection('dat-lich')}
+                >
+                  <Calendar size={16} />
+                  <span>ĐẶT LỊCH NGAY</span>
+                </button>
+                <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
+                  <PhoneCall size={16} />
+                  <span>0938 974 424</span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
