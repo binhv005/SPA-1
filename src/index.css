@@ -1565,10 +1565,7 @@ button {
 }
 
 /* ==========================================================================
-   Spa Wellness Background Decorative Elements (Transparent)
-   ========================================================================== */
-/* ==========================================================================
-   Spa Wellness Background Decorative Elements (Transparent Leaves)
+   Spa Wellness Botanical Leaf Decorations & Animations
    ========================================================================== */
 .spa-decorated-section {
   position: relative;
@@ -1578,9 +1575,10 @@ button {
 .spa-decor {
   position: absolute;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   user-select: none;
-  transition: transform 0.6s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s ease;
 }
 
 .spa-decor img {
@@ -1589,47 +1587,175 @@ button {
   display: block;
 }
 
+/* Float Animations for Organic Relaxing Spa Feel */
+@keyframes leafFloatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2.5deg);
+  }
+}
+
+@keyframes leafFloatReverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
+  }
+}
+
+@keyframes leafSwayGentle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(4deg) scale(1.02);
+  }
+}
+
+.leaf-float-1 {
+  animation: leafFloatSlow 8s ease-in-out infinite;
+}
+
+.leaf-float-2 {
+  animation: leafFloatReverse 9s ease-in-out infinite 1s;
+}
+
+.leaf-sway {
+  animation: leafSwayGentle 7s ease-in-out infinite 0.5s;
+}
+
+/* Positions & Sizing for Leaf Elements */
 .spa-top-left {
-  top: -15px;
-  left: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.18;
-  transform: rotate(-10deg);
+  top: -20px;
+  left: -20px;
+  width: clamp(140px, 18vw, 280px);
+  opacity: 0.55;
+  transform: rotate(-12deg);
 }
 
 .spa-top-right {
-  top: -15px;
-  right: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.18;
+  top: -20px;
+  right: -20px;
+  width: clamp(140px, 18vw, 280px);
+  opacity: 0.55;
   transform: rotate(15deg) scaleX(-1);
 }
 
 .spa-bottom-left {
-  bottom: -15px;
-  left: -15px;
-  width: clamp(120px, 14vw, 210px);
-  opacity: 0.16;
-  transform: rotate(20deg);
+  bottom: -20px;
+  left: -20px;
+  width: clamp(140px, 18vw, 270px);
+  opacity: 0.5;
+  transform: rotate(18deg);
 }
 
 .spa-bottom-right {
-  bottom: -15px;
-  right: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.18;
+  bottom: -20px;
+  right: -20px;
+  width: clamp(140px, 18vw, 280px);
+  opacity: 0.55;
   transform: rotate(-15deg);
+}
+
+.spa-mid-left {
+  top: 45%;
+  left: -35px;
+  width: clamp(110px, 14vw, 220px);
+  opacity: 0.45;
+  transform: translateY(-50%) rotate(8deg);
+}
+
+.spa-mid-right {
+  top: 45%;
+  right: -35px;
+  width: clamp(110px, 14vw, 220px);
+  opacity: 0.45;
+  transform: translateY(-50%) rotate(-12deg) scaleX(-1);
+}
+
+/* Palm Large Botanical Leaves */
+.spa-palm-top-left {
+  top: -30px;
+  left: -40px;
+  width: clamp(180px, 22vw, 360px);
+  opacity: 0.42;
+  transform: rotate(-25deg);
+}
+
+.spa-palm-bottom-right {
+  bottom: -30px;
+  right: -40px;
+  width: clamp(180px, 22vw, 360px);
+  opacity: 0.42;
+  transform: rotate(15deg);
+}
+
+.spa-palm-top-right {
+  top: -30px;
+  right: -40px;
+  width: clamp(180px, 22vw, 360px);
+  opacity: 0.4;
+  transform: rotate(20deg) scaleX(-1);
+}
+
+.spa-palm-bottom-left {
+  bottom: -30px;
+  left: -40px;
+  width: clamp(180px, 22vw, 360px);
+  opacity: 0.4;
+  transform: rotate(-20deg);
 }
 
 /* For dark burgundy sections (Dịch vụ & Đặt lịch) */
 .spa-decor.dark-theme-decor {
-  opacity: 0.14;
+  opacity: 0.48;
+  filter: drop-shadow(0 4px 16px rgba(229, 195, 136, 0.25));
+}
+
+.spa-decor.dark-theme-decor.spa-top-left,
+.spa-decor.dark-theme-decor.spa-top-right,
+.spa-decor.dark-theme-decor.spa-bottom-left,
+.spa-decor.dark-theme-decor.spa-bottom-right {
+  opacity: 0.52;
+}
+
+/* Leaf Watermark & Section Divider Accents */
+.leaf-accent-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.leaf-accent-pill::before {
+  content: '🌿';
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.section-tag::before {
+  content: '🌿';
+  margin-right: 6px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.section-tag.light::before {
+  content: '✨';
+  color: var(--color-gold-light);
 }
 
 @media (max-width: 768px) {
-  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right {
-    width: 90px;
-    opacity: 0.12;
+  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right,
+  .spa-palm-top-left, .spa-palm-bottom-right, .spa-palm-top-right, .spa-palm-bottom-left {
+    width: clamp(90px, 20vw, 140px);
+    opacity: 0.35;
+  }
+
+  .spa-mid-left, .spa-mid-right {
+    display: none;
   }
 }
 

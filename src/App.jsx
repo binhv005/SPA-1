@@ -249,7 +249,15 @@ export default function App() {
         {/* =========================================================================
             SECTION 1 – HERO
             ========================================================================= */}
-        <section id="hero" className="hero-section">
+        <section id="hero" className="hero-section spa-decorated-section">
+          {/* Subtle Botanical Palm Leaf Framing */}
+          <div className="spa-decor spa-palm-top-left leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_palm_1.png" alt="" />
+          </div>
+          <div className="spa-decor spa-palm-bottom-right leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_palm_2.png" alt="" />
+          </div>
+
           <div className="hero-bg-wrapper">
             <img
               src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
@@ -264,11 +272,14 @@ export default function App() {
             ========================================================================= */}
         <section id="gioi-thieu" className="about-section spa-decorated-section">
           {/* Decorative Transparent Leaf Elements */}
-          <div className="spa-decor spa-top-left" aria-hidden="true">
+          <div className="spa-decor spa-top-left leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-right" aria-hidden="true">
+          <div className="spa-decor spa-bottom-right leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-right leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_watercolor.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -344,11 +355,18 @@ export default function App() {
             SECTION 3 – DỊCH VỤ CHĂM SÓC SỨC KHỎE TẠI OMI SPA (ĐÚNG 4 DỊCH VỤ)
             ========================================================================= */}
         <section id="dich-vu" className="services-section spa-decorated-section">
-          <div className="spa-decor spa-top-right dark-theme-decor" aria-hidden="true">
+          {/* Shimmering Gold & Wine Botanical Leaves */}
+          <div className="spa-decor spa-top-right dark-theme-decor leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-left dark-theme-decor" aria-hidden="true">
+          <div className="spa-decor spa-bottom-left dark-theme-decor leaf-float-2" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
+          </div>
+          <div className="spa-decor spa-top-left dark-theme-decor leaf-sway" aria-hidden="true">
+            <img src="/images/leaves/leaf_green_transparent_wine.png" alt="" />
+          </div>
+          <div className="spa-decor spa-bottom-right dark-theme-decor leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent_wine.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -472,11 +490,14 @@ export default function App() {
             SECTION 4 – TRẢI NGHIỆM KHÁCH HÀNG & KHÔNG GIAN
             ========================================================================= */}
         <section id="trai-nghiem" className="experience-section spa-decorated-section">
-          <div className="spa-decor spa-top-left" aria-hidden="true">
-            <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          <div className="spa-decor spa-palm-top-left leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_palm_2.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-right" aria-hidden="true">
+          <div className="spa-decor spa-bottom-right leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-left leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_watercolor.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -537,11 +558,14 @@ export default function App() {
             SECTION 5 – KHÁCH HÀNG MỤC TIÊU (3 NHÓM)
             ========================================================================= */}
         <section id="khach-hang" className="audience-section spa-decorated-section">
-          <div className="spa-decor spa-top-right" aria-hidden="true">
+          <div className="spa-decor spa-top-right leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-left" aria-hidden="true">
+          <div className="spa-decor spa-bottom-left leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-right leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_palm_1.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -612,11 +636,18 @@ export default function App() {
             SECTION 6 & 7 – CTA ĐẶT LỊCH & FORM ĐẶT LỊCH
             ========================================================================= */}
         <section id="dat-lich" className="booking-section spa-decorated-section">
-          <div className="spa-decor spa-top-left dark-theme-decor" aria-hidden="true">
+          {/* Shimmering Gold & Olive Leaves */}
+          <div className="spa-decor spa-top-left dark-theme-decor leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-right dark-theme-decor" aria-hidden="true">
+          <div className="spa-decor spa-bottom-right dark-theme-decor leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
+          </div>
+          <div className="spa-decor spa-top-right dark-theme-decor leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent_wine.png" alt="" />
+          </div>
+          <div className="spa-decor spa-bottom-left dark-theme-decor leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_green_transparent_wine.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -820,11 +851,14 @@ export default function App() {
             SECTION 8 – ĐỊA CHỈ & LIÊN HỆ
             ========================================================================= */}
         <section id="lien-he" className="contact-section spa-decorated-section">
-          <div className="spa-decor spa-top-right" aria-hidden="true">
-            <img src="/images/spa_elements/spa_vase_towels.png" alt="" />
+          <div className="spa-decor spa-top-right leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
           </div>
-          <div className="spa-decor spa-bottom-left" aria-hidden="true">
-            <img src="/images/spa_elements/spa_tray_blossom.png" alt="" />
+          <div className="spa-decor spa-bottom-left leaf-sway" aria-hidden="true">
+            <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-left leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_watercolor.png" alt="" />
           </div>
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
@@ -930,7 +964,14 @@ export default function App() {
       {/* =========================================================================
           SECTION 9 – FOOTER
           ========================================================================= */}
-      <footer className="site-footer">
+      <footer className="site-footer spa-decorated-section">
+        {/* Shimmering Gold Leaves on Footer */}
+        <div className="spa-decor spa-top-left dark-theme-decor leaf-float-1" aria-hidden="true">
+          <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
+        </div>
+        <div className="spa-decor spa-top-right dark-theme-decor leaf-sway" aria-hidden="true">
+          <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
+        </div>
         <div className="container">
           <div className="footer-top-grid">
             <div className="footer-brand-col">
