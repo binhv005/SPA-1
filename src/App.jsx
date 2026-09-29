@@ -969,14 +969,7 @@ export default function App() {
       {/* =========================================================================
           SECTION 9 – FOOTER
           ========================================================================= */}
-      <footer className="site-footer spa-decorated-section">
-        {/* Shimmering Gold Leaves on Footer */}
-        <div className="spa-decor spa-bottom-left dark-theme-decor leaf-float-1" aria-hidden="true">
-          <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
-        </div>
-        <div className="spa-decor spa-bottom-right dark-theme-decor leaf-sway" aria-hidden="true">
-          <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
-        </div>
+      <footer className="site-footer">
         <div className="container">
           <div className="footer-top-grid">
             <div className="footer-brand-col">
