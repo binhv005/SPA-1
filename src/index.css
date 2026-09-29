@@ -462,9 +462,6 @@ button {
   z-index: 98;
 }
 
-/* ==========================================================================
-   Section 1 - Hero
-   ========================================================================== */
 .hero-section {
   position: relative;
   width: 100%;
@@ -474,22 +471,18 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #561E16;
+  background-color: #2A090D;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
 
 .hero-bg-wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #561E16;
+  height: 100%;
   z-index: 1;
 }
 
@@ -499,6 +492,21 @@ button {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 6, 9, 0.15) 0%,
+    rgba(30, 6, 9, 0.35) 60%,
+    rgba(30, 6, 9, 0.8) 100%
+  );
+  pointer-events: none;
 }
 
 .hero-mobile-content {
@@ -1512,21 +1520,53 @@ button {
   }
 
   .hero-section {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
     padding-top: 86px;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
     padding-left: 16px;
     padding-right: 16px;
-    min-height: calc(100svh - 70px);
-    background: radial-gradient(circle at 50% 15%, #46141A 0%, #25060A 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .hero-bg-wrapper {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(20, 3, 5, 0.15) 0%,
+      rgba(20, 3, 5, 0.45) 45%,
+      rgba(20, 3, 5, 0.88) 80%,
+      rgba(20, 3, 5, 0.98) 100%
+    );
+    pointer-events: none;
   }
 
   .hero-mobile-content {
@@ -1535,26 +1575,10 @@ button {
     align-items: center;
     width: 100%;
     max-width: 440px;
-    gap: 16px;
+    gap: 14px;
     text-align: center;
     position: relative;
-    z-index: 2;
-  }
-
-  .hero-mobile-banner-card {
-    width: 100%;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(229, 195, 136, 0.35);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-    background: #3E1015;
-  }
-
-  .hero-mobile-banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    z-index: 3;
   }
 
   .hero-mobile-info {
@@ -1567,18 +1591,20 @@ button {
 
   .hero-mobile-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.2rem, 4.8vw, 1.4rem);
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
     color: #FFFFFF;
     line-height: 1.35;
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   }
 
   .hero-mobile-subtitle {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.45;
     margin: 0;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   }
 
   .hero-mobile-pills {
@@ -1591,13 +1617,13 @@ button {
 
   .hero-pill {
     font-size: 0.74rem;
-    font-weight: 500;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(229, 195, 136, 0.22);
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(229, 195, 136, 0.35);
     color: var(--color-gold-light);
-    padding: 4px 10px;
+    padding: 5px 12px;
     border-radius: 20px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
   }
 
   .hero-mobile-actions {
@@ -1612,8 +1638,8 @@ button {
   .hero-mobile-btn,
   .hero-mobile-phone {
     flex: 1;
-    font-size: 0.82rem;
-    padding: 12px 10px;
+    font-size: 0.84rem;
+    padding: 13px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1623,9 +1649,14 @@ button {
     border-radius: 50px;
   }
 
+  .hero-mobile-btn {
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+  }
+
   .hero-mobile-phone {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1.5px solid rgba(229, 195, 136, 0.35);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(229, 195, 136, 0.45);
     color: #FFFFFF;
   }
 

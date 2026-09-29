@@ -248,28 +248,21 @@ export default function App() {
 
       <main>
         {/* =========================================================================
-            SECTION 1 – HERO
+            SECTION 1 – HERO (FULL PHOTO BACKGROUND)
             ========================================================================= */}
         <section id="hero" className="hero-section">
-          {/* Desktop Fullscreen Banner */}
+          {/* Fullscreen Photo Background (Desktop & Mobile) */}
           <div className="hero-bg-wrapper">
             <img
               src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
               alt="OMI SPA Bảo Dưỡng Sức Khỏe"
               className="hero-bg-img"
             />
+            <div className="hero-overlay"></div>
           </div>
 
-          {/* Mobile Enhanced Full-Height Hero Experience */}
+          {/* Hero Content Over Background Photo */}
           <div className="hero-mobile-content">
-            <div className="hero-mobile-banner-card">
-              <img
-                src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
-                alt="OMI SPA Bảo Dưỡng Sức Khỏe"
-                className="hero-mobile-banner-img"
-              />
-            </div>
-
             <div className="hero-mobile-info">
               <h1 className="hero-mobile-title">
                 Trị Liệu Dưỡng Sinh & Bảo Dưỡng Sức Khỏe
