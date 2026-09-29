@@ -298,9 +298,12 @@ export default function App() {
             SECTION 2 – GIỚI THIỆU OMI SPA
             ========================================================================= */}
         <section id="gioi-thieu" className="about-section spa-decorated-section">
-          {/* Alternating Layout: Top-Left + Ambient Center */}
+          {/* Evenly Distributed Leaves: Top-Left, Mid-Right, Ambient Center */}
           <div className="spa-decor spa-top-left leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-right leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_green_transparent.png" alt="" />
           </div>
           <div className="spa-decor spa-ambient-center leaf-float-2" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_light.png" alt="" />
@@ -378,7 +381,10 @@ export default function App() {
             SECTION 3 – DỊCH VỤ CHĂM SÓC SỨC KHỎE TẠI OMI SPA (ĐÚNG 4 DỊCH VỤ)
             ========================================================================= */}
         <section id="dich-vu" className="services-section spa-decorated-section">
-          {/* Alternating Layout: Ambient Center + Bottom-Right (No top leaf to avoid seam overlap) */}
+          {/* Evenly Distributed Leaves: Mid-Left, Ambient Center, Bottom-Right (Gold Theme) */}
+          <div className="spa-decor spa-mid-left dark-theme-decor leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
+          </div>
           <div className="spa-decor spa-ambient-center dark-theme-decor leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
           </div>
@@ -506,9 +512,12 @@ export default function App() {
             SECTION 4 – TRẢI NGHIỆM KHÁCH HÀNG & KHÔNG GIAN
             ========================================================================= */}
         <section id="trai-nghiem" className="experience-section spa-decorated-section">
-          {/* Alternating Layout: Top-Left + Ambient Center */}
+          {/* Evenly Distributed Leaves: Top-Left, Mid-Right, Ambient Center */}
           <div className="spa-decor spa-top-left leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-right leaf-sway" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent.png" alt="" />
           </div>
           <div className="spa-decor spa-ambient-center leaf-float-2" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent_light.png" alt="" />
@@ -571,7 +580,10 @@ export default function App() {
             SECTION 5 – KHÁCH HÀNG MỤC TIÊU (3 NHÓM)
             ========================================================================= */}
         <section id="khach-hang" className="audience-section spa-decorated-section">
-          {/* Alternating Layout: Ambient Center + Bottom-Right */}
+          {/* Evenly Distributed Leaves: Mid-Left, Ambient Center, Bottom-Right */}
+          <div className="spa-decor spa-mid-left leaf-float-2" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent_light.png" alt="" />
+          </div>
           <div className="spa-decor spa-ambient-center leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_light.png" alt="" />
           </div>
@@ -646,9 +658,12 @@ export default function App() {
             SECTION 6 & 7 – CTA ĐẶT LỊCH & FORM ĐẶT LỊCH
             ========================================================================= */}
         <section id="dat-lich" className="booking-section spa-decorated-section">
-          {/* Alternating Layout: Top-Left + Ambient Center */}
+          {/* Evenly Distributed Leaves: Top-Left, Mid-Right, Ambient Center (Gold Theme) */}
           <div className="spa-decor spa-top-left dark-theme-decor leaf-float-1" aria-hidden="true">
             <img src="/images/leaves/leaf_green_transparent_gold.png" alt="" />
+          </div>
+          <div className="spa-decor spa-mid-right dark-theme-decor leaf-sway" aria-hidden="true">
+            <img src="/images/leaves/leaf_olive_transparent_gold.png" alt="" />
           </div>
           <div className="spa-decor spa-ambient-center dark-theme-decor leaf-float-2" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent_wine.png" alt="" />
@@ -854,7 +869,10 @@ export default function App() {
             SECTION 8 – ĐỊA CHỈ & LIÊN HỆ
             ========================================================================= */}
         <section id="lien-he" className="contact-section spa-decorated-section">
-          {/* Alternating Layout: Ambient Center + Bottom-Right */}
+          {/* Evenly Distributed Leaves: Mid-Left, Ambient Center, Bottom-Right */}
+          <div className="spa-decor spa-mid-left leaf-float-1" aria-hidden="true">
+            <img src="/images/leaves/leaf_green_transparent.png" alt="" />
+          </div>
           <div className="spa-decor spa-ambient-center leaf-sway" aria-hidden="true">
             <img src="/images/leaves/leaf_olive_transparent_light.png" alt="" />
           </div>

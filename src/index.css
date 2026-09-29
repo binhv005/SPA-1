@@ -1809,6 +1809,22 @@ button {
   transform: rotate(-12deg);
 }
 
+.spa-mid-left {
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%) rotate(8deg);
+  width: clamp(105px, 12vw, 190px);
+  opacity: 0.17;
+}
+
+.spa-mid-right {
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%) rotate(-10deg) scaleX(-1);
+  width: clamp(105px, 12vw, 190px);
+  opacity: 0.17;
+}
+
 /* Ambient Leaf in the Middle of Sections */
 .spa-ambient-center {
   top: 50%;
@@ -1832,12 +1848,14 @@ button {
 .spa-decor.dark-theme-decor.spa-top-left,
 .spa-decor.dark-theme-decor.spa-top-right,
 .spa-decor.dark-theme-decor.spa-bottom-left,
-.spa-decor.dark-theme-decor.spa-bottom-right {
+.spa-decor.dark-theme-decor.spa-bottom-right,
+.spa-decor.dark-theme-decor.spa-mid-left,
+.spa-decor.dark-theme-decor.spa-mid-right {
   opacity: 0.15;
 }
 
 @media (max-width: 768px) {
-  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right {
+  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right, .spa-mid-left, .spa-mid-right {
     width: clamp(70px, 15vw, 100px);
     opacity: 0.15;
   }
@@ -1859,6 +1877,16 @@ button {
   
   .spa-bottom-right {
     bottom: 20px;
+    right: -15px;
+  }
+
+  .spa-mid-left {
+    top: 50%;
+    left: -15px;
+  }
+
+  .spa-mid-right {
+    top: 50%;
     right: -15px;
   }
 
