@@ -1707,6 +1707,22 @@ button {
   transform: rotate(-12deg);
 }
 
+/* Ambient Leaf in the Middle of Sections */
+.spa-ambient-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  width: clamp(200px, 24vw, 360px);
+  opacity: 0.16;
+  z-index: 0;
+  filter: blur(0.5px);
+}
+
+.spa-ambient-center.dark-theme-decor {
+  opacity: 0.13;
+  filter: drop-shadow(0 4px 20px rgba(229, 195, 136, 0.3));
+}
+
 /* For dark burgundy sections (Dịch vụ & Đặt lịch) */
 .spa-decor.dark-theme-decor {
   opacity: 0.45;
@@ -1769,6 +1785,11 @@ button {
   .spa-bottom-right {
     bottom: 12px;
     right: -10px;
+  }
+
+  .spa-ambient-center {
+    width: clamp(150px, 45vw, 220px);
+    opacity: 0.12;
   }
 }
 
