@@ -1676,97 +1676,48 @@ button {
 
 /* Positions & Sizing for Leaf Elements */
 .spa-top-left {
-  top: -20px;
-  left: -20px;
-  width: clamp(140px, 18vw, 280px);
-  opacity: 0.55;
-  transform: rotate(-12deg);
+  top: 20px;
+  left: -15px;
+  width: clamp(120px, 14vw, 220px);
+  opacity: 0.48;
+  transform: rotate(-10deg);
 }
 
 .spa-top-right {
-  top: -20px;
-  right: -20px;
-  width: clamp(140px, 18vw, 280px);
-  opacity: 0.55;
-  transform: rotate(15deg) scaleX(-1);
+  top: 20px;
+  right: -15px;
+  width: clamp(120px, 14vw, 220px);
+  opacity: 0.48;
+  transform: rotate(12deg) scaleX(-1);
 }
 
 .spa-bottom-left {
-  bottom: -20px;
-  left: -20px;
-  width: clamp(140px, 18vw, 270px);
-  opacity: 0.5;
-  transform: rotate(18deg);
-}
-
-.spa-bottom-right {
-  bottom: -20px;
-  right: -20px;
-  width: clamp(140px, 18vw, 280px);
-  opacity: 0.55;
-  transform: rotate(-15deg);
-}
-
-.spa-mid-left {
-  top: 45%;
-  left: -35px;
-  width: clamp(110px, 14vw, 220px);
+  bottom: 20px;
+  left: -15px;
+  width: clamp(120px, 14vw, 220px);
   opacity: 0.45;
-  transform: translateY(-50%) rotate(8deg);
-}
-
-.spa-mid-right {
-  top: 45%;
-  right: -35px;
-  width: clamp(110px, 14vw, 220px);
-  opacity: 0.45;
-  transform: translateY(-50%) rotate(-12deg) scaleX(-1);
-}
-
-/* Palm Large Botanical Leaves */
-.spa-palm-top-left {
-  top: -30px;
-  left: -40px;
-  width: clamp(180px, 22vw, 360px);
-  opacity: 0.42;
-  transform: rotate(-25deg);
-}
-
-.spa-palm-bottom-right {
-  bottom: -30px;
-  right: -40px;
-  width: clamp(180px, 22vw, 360px);
-  opacity: 0.42;
   transform: rotate(15deg);
 }
 
-.spa-palm-top-right {
-  top: -30px;
-  right: -40px;
-  width: clamp(180px, 22vw, 360px);
-  opacity: 0.4;
-  transform: rotate(20deg) scaleX(-1);
-}
-
-.spa-palm-bottom-left {
-  bottom: -30px;
-  left: -40px;
-  width: clamp(180px, 22vw, 360px);
-  opacity: 0.4;
-  transform: rotate(-20deg);
+.spa-bottom-right {
+  bottom: 20px;
+  right: -15px;
+  width: clamp(120px, 14vw, 220px);
+  opacity: 0.48;
+  transform: rotate(-12deg);
 }
 
 /* For dark burgundy sections (Dịch vụ & Đặt lịch) */
 .spa-decor.dark-theme-decor {
-  opacity: 0.48;
-  filter: drop-shadow(0 4px 16px rgba(229, 195, 136, 0.25));
+  opacity: 0.45;
+  filter: drop-shadow(0 4px 14px rgba(229, 195, 136, 0.22));
 }
 
 .spa-decor.dark-theme-decor.spa-top-left,
 .spa-decor.dark-theme-decor.spa-top-right,
 .spa-decor.dark-theme-decor.spa-bottom-left,
 .spa-decor.dark-theme-decor.spa-bottom-right {
-  opacity: 0.52;
+  opacity: 0.48;
 }
 
 /* Leaf Watermark & Section Divider Accents */
@@ -1795,14 +1746,29 @@ button {
 }
 
 @media (max-width: 768px) {
-  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right,
-  .spa-palm-top-left, .spa-palm-bottom-right, .spa-palm-top-right, .spa-palm-bottom-left {
-    width: clamp(90px, 20vw, 140px);
-    opacity: 0.35;
+  .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right {
+    width: clamp(75px, 16vw, 105px);
+    opacity: 0.38;
   }
-
-  .spa-mid-left, .spa-mid-right {
-    display: none;
+  
+  .spa-top-left {
+    top: 12px;
+    left: -10px;
+  }
+  
+  .spa-top-right {
+    top: 12px;
+    right: -10px;
+  }
+  
+  .spa-bottom-left {
+    bottom: 12px;
+    left: -10px;
+  }
+  
+  .spa-bottom-right {
+    bottom: 12px;
+    right: -10px;
   }
 }
 
