@@ -1530,7 +1530,7 @@ button {
     min-height: 100vh;
     min-height: 100dvh;
     padding-top: 86px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     padding-left: 16px;
     padding-right: 16px;
     display: flex;
@@ -1555,7 +1555,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center 25%;
     display: block;
   }
 
@@ -1567,11 +1567,94 @@ button {
     height: 100%;
     background: linear-gradient(
       180deg,
-      rgba(20, 3, 5, 0.05) 0%,
-      rgba(20, 3, 5, 0.15) 50%,
-      rgba(20, 3, 5, 0.7) 100%
+      rgba(20, 3, 5, 0.15) 0%,
+      rgba(20, 3, 5, 0.35) 45%,
+      rgba(20, 3, 5, 0.85) 75%,
+      rgba(20, 3, 5, 0.96) 100%
     );
     pointer-events: none;
+  }
+
+  .hero-mobile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    padding-top: 20px;
+  }
+
+  .hero-brand-emblem-wrap {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(229, 195, 136, 0.65);
+    overflow: hidden;
+    margin-bottom: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    background: rgba(42, 9, 13, 0.6);
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-brand-emblem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-brand-name {
+    font-family: var(--font-heading);
+    font-size: clamp(2.4rem, 10vw, 3.2rem);
+    font-weight: 500;
+    color: #E8D3B9;
+    letter-spacing: 0.22em;
+    text-indent: 0.22em; /* Centers accurately with letter-spacing */
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.1;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-brand-script {
+    font-family: 'Alex Brush', 'Cormorant Garamond', cursive;
+    font-size: clamp(1.7rem, 7vw, 2.3rem);
+    font-weight: 400;
+    color: #E8D3B9;
+    letter-spacing: 0.04em;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-brand-contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    font-size: 0.76rem;
+    color: rgba(232, 211, 185, 0.92);
+    margin-bottom: 16px;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: rgba(232, 211, 185, 0.92);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-contact-divider {
+    color: rgba(232, 211, 185, 0.5);
   }
 
   .hero-mobile-actions {

@@ -267,19 +267,41 @@ export default function App() {
             <div className="hero-overlay"></div>
           </div>
 
-          {/* Clean Quick Action Bar on Mobile */}
-          <div className="hero-mobile-actions">
-            <button
-              className="btn-primary hero-mobile-btn"
-              onClick={() => scrollToSection('dat-lich')}
-            >
-              <Calendar size={16} />
-              <span>ĐẶT LỊCH NGAY</span>
-            </button>
-            <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
-              <PhoneCall size={16} />
-              <span>0938 974 424</span>
-            </a>
+          {/* Mobile Overlay Brand Typography (Matching OMI SPA Signature Banner) */}
+          <div className="hero-mobile-content">
+            <div className="hero-brand-emblem-wrap">
+              <img src="/images/logo.jpg" alt="OMI SPA Logo" className="hero-brand-emblem" />
+            </div>
+
+            <h1 className="hero-brand-name">OMI SPA</h1>
+            <div className="hero-brand-script">Bảo dưỡng sức khỏe</div>
+
+            <div className="hero-brand-contact-row">
+              <a href="tel:0938974424" className="hero-contact-item">
+                <Phone size={13} color="#E8D3B9" />
+                <span>093 897 4424</span>
+              </a>
+              <span className="hero-contact-divider">•</span>
+              <div className="hero-contact-item">
+                <MapPin size={13} color="#E8D3B9" />
+                <span>159 Ba Vân, P. 14, Q. Tân Bình, HCM</span>
+              </div>
+            </div>
+
+            {/* Quick Action Buttons */}
+            <div className="hero-mobile-actions">
+              <button
+                className="btn-primary hero-mobile-btn"
+                onClick={() => scrollToSection('dat-lich')}
+              >
+                <Calendar size={16} />
+                <span>ĐẶT LỊCH NGAY</span>
+              </button>
+              <a href="tel:0938974424" className="cta-phone-btn hero-mobile-phone">
+                <PhoneCall size={16} />
+                <span>0938 974 424</span>
+              </a>
+            </div>
           </div>
         </section>
 
