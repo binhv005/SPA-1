@@ -249,15 +249,7 @@ export default function App() {
         {/* =========================================================================
             SECTION 1 – HERO
             ========================================================================= */}
-        <section id="hero" className="hero-section spa-decorated-section">
-          {/* Subtle Botanical Palm Leaf Framing */}
-          <div className="spa-decor spa-palm-top-left leaf-float-1" aria-hidden="true">
-            <img src="/images/leaves/leaf_palm_1.png" alt="" />
-          </div>
-          <div className="spa-decor spa-palm-bottom-right leaf-float-2" aria-hidden="true">
-            <img src="/images/leaves/leaf_palm_2.png" alt="" />
-          </div>
-
+        <section id="hero" className="hero-section">
           <div className="hero-bg-wrapper">
             <img
               src="/images/501053524_122131407488785371_8398657580165171493_n.jpg"
