@@ -293,7 +293,6 @@ export default function App() {
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
             <div className="about-grid">
               <div className="about-content">
-                <span className="section-tag">Về OMI SPA</span>
                 <h2 className="section-title">
                   Chăm sóc cơ thể – Cân bằng sức khỏe
                 </h2>
@@ -376,7 +375,6 @@ export default function App() {
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
             <div className="section-header-center">
-              <span className="section-tag light">Dịch vụ</span>
               <h2 className="section-title light">Dịch vụ chăm sóc sức khỏe</h2>
               <p className="section-desc light" style={{ margin: '0 auto' }}>
                 Liệu pháp thư giãn và phục hồi chuyên sâu cho cơ thể.
@@ -534,7 +532,6 @@ export default function App() {
               </div>
 
               <div className="experience-content">
-                <span className="section-tag">Không gian</span>
                 <h2 className="section-title">Không gian thư giãn an yên</h2>
                 <p className="section-desc">
                   Nơi bạn thả lỏng tâm trí và chăm sóc cơ thể nhẹ nhàng.
@@ -577,7 +574,6 @@ export default function App() {
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
             <div className="section-header-center">
-              <span className="section-tag">Phù hợp với ai</span>
               <h2 className="section-title">Dành cho bạn</h2>
               <p className="section-desc" style={{ margin: '0 auto' }}>
                 Lựa chọn lý tưởng cho mọi nhu cầu nghỉ ngơi & phục hồi sức khỏe.
@@ -658,7 +654,6 @@ export default function App() {
             <div className="booking-split-grid">
               {/* Left Column: Section 6 CTA Content */}
               <div className="cta-promo-content">
-                <span className="section-tag light">Đặt lịch hẹn</span>
                 <h2 className="cta-promo-title">
                   Dành thời gian chăm sóc chính bạn
                 </h2>
@@ -868,7 +863,6 @@ export default function App() {
 
           <div className="container" style={{ position: 'relative', zIndex: 2 }}>
             <div className="section-header-center" style={{ marginBottom: '40px' }}>
-              <span className="section-tag">Liên hệ</span>
               <h2 className="section-title">Thông Tin Liên Hệ</h2>
             </div>
 
