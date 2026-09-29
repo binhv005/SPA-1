@@ -1622,9 +1622,10 @@ button {
 .spa-decor {
   position: absolute;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
   user-select: none;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  opacity: 0.18;
+  filter: blur(0.3px);
   transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.4s ease;
 }
 
@@ -1640,7 +1641,7 @@ button {
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-10px) rotate(2.5deg);
+    transform: translateY(-8px) rotate(2deg);
   }
 }
 
@@ -1649,7 +1650,7 @@ button {
     transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(-8px) rotate(-3deg);
+    transform: translateY(-6px) rotate(-2.5deg);
   }
 }
 
@@ -1658,7 +1659,7 @@ button {
     transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: rotate(4deg) scale(1.02);
+    transform: rotate(3deg) scale(1.01);
   }
 }
 
@@ -1676,34 +1677,34 @@ button {
 
 /* Positions & Sizing for Leaf Elements */
 .spa-top-left {
-  top: 20px;
-  left: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.48;
+  top: 30px;
+  left: -20px;
+  width: clamp(110px, 13vw, 200px);
+  opacity: 0.18;
   transform: rotate(-10deg);
 }
 
 .spa-top-right {
-  top: 20px;
-  right: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.48;
+  top: 30px;
+  right: -20px;
+  width: clamp(110px, 13vw, 200px);
+  opacity: 0.18;
   transform: rotate(12deg) scaleX(-1);
 }
 
 .spa-bottom-left {
-  bottom: 20px;
-  left: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.45;
+  bottom: 30px;
+  left: -20px;
+  width: clamp(110px, 13vw, 200px);
+  opacity: 0.18;
   transform: rotate(15deg);
 }
 
 .spa-bottom-right {
-  bottom: 20px;
-  right: -15px;
-  width: clamp(120px, 14vw, 220px);
-  opacity: 0.48;
+  bottom: 30px;
+  right: -20px;
+  width: clamp(110px, 13vw, 200px);
+  opacity: 0.18;
   transform: rotate(-12deg);
 }
 
@@ -1712,84 +1713,57 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(15deg);
-  width: clamp(200px, 24vw, 360px);
-  opacity: 0.16;
+  width: clamp(180px, 22vw, 320px);
+  opacity: 0.09;
   z-index: 0;
-  filter: blur(0.5px);
+  filter: blur(0.8px);
 }
 
 .spa-ambient-center.dark-theme-decor {
-  opacity: 0.13;
-  filter: drop-shadow(0 4px 20px rgba(229, 195, 136, 0.3));
+  opacity: 0.08;
 }
 
 /* For dark burgundy sections (Dịch vụ & Đặt lịch) */
 .spa-decor.dark-theme-decor {
-  opacity: 0.45;
-  filter: drop-shadow(0 4px 14px rgba(229, 195, 136, 0.22));
+  opacity: 0.14;
 }
 
 .spa-decor.dark-theme-decor.spa-top-left,
 .spa-decor.dark-theme-decor.spa-top-right,
 .spa-decor.dark-theme-decor.spa-bottom-left,
 .spa-decor.dark-theme-decor.spa-bottom-right {
-  opacity: 0.48;
-}
-
-/* Leaf Watermark & Section Divider Accents */
-.leaf-accent-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.leaf-accent-pill::before {
-  content: '🌿';
-  font-size: 0.85rem;
-  line-height: 1;
-}
-
-.section-tag::before {
-  content: '🌿';
-  margin-right: 6px;
-  font-size: 0.8rem;
-  opacity: 0.85;
-}
-
-.section-tag.light::before {
-  content: '✨';
-  color: var(--color-gold-light);
+  opacity: 0.15;
 }
 
 @media (max-width: 768px) {
   .spa-top-left, .spa-top-right, .spa-bottom-left, .spa-bottom-right {
-    width: clamp(75px, 16vw, 105px);
-    opacity: 0.38;
+    width: clamp(70px, 15vw, 100px);
+    opacity: 0.15;
   }
   
   .spa-top-left {
-    top: 12px;
-    left: -10px;
+    top: 20px;
+    left: -15px;
   }
   
   .spa-top-right {
-    top: 12px;
-    right: -10px;
+    top: 20px;
+    right: -15px;
   }
   
   .spa-bottom-left {
-    bottom: 12px;
-    left: -10px;
+    bottom: 20px;
+    left: -15px;
   }
   
   .spa-bottom-right {
-    bottom: 12px;
-    right: -10px;
+    bottom: 20px;
+    right: -15px;
   }
 
   .spa-ambient-center {
-    width: clamp(150px, 45vw, 220px);
-    opacity: 0.12;
+    width: clamp(130px, 40vw, 190px);
+    opacity: 0.07;
   }
 }
 
